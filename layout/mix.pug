@@ -9,7 +9,7 @@ mixin BtnBig(text,id)
 mixin card(text)
     .card 
         .card__header
-            img(src='../image/card.png')
+            img(src='./image/card.png')
             span.hit хит продаж
             span.new новинка
             span.day букет дня
@@ -32,12 +32,12 @@ mixin catalogItem(text,img)
             img(src=img)
         .catCard__footer
             .one
-                img(src="../image/leftTop.svg", alt="")
-                img(src="../image/leftBottom.svg", alt="")
+                img(src="./image/leftTop.svg", alt="")
+                img(src="./image/leftBottom.svg", alt="")
             .content=text
             .two
-               img(src="../image/rightTop.svg", alt="")
-               img(src="../image/rightBottom.svg", alt="")
+               img(src="./image/rightTop.svg", alt="")
+               img(src="./image/rightBottom.svg", alt="")
 //- вид каталога    
 mixin catalogItemBig(text,img,align)
     .catCard.catCard-width
@@ -46,24 +46,24 @@ mixin catalogItemBig(text,img,align)
         if align=='left'
             .catCard__footer-big.catCard__footer-big-left
                 .one
-                    img(src="../image/leftTopBig.svg", alt="") 
-                    img(src="../image/rightTopBig.svg", alt="")
+                    img(src="./image/leftTopBig.svg", alt="") 
+                    img(src="./image/rightTopBig.svg", alt="")
                     
                 .content=text
                 .two
-                    img(src="../image/leftBottomBig.svg", alt="")
-                    img(src="../image/rightBottomBig.svg", alt="")
+                    img(src="./image/leftBottomBig.svg", alt="")
+                    img(src="./image/rightBottomBig.svg", alt="")
         else if align=='right'
             .catCard__footer-big
                 .one
-                    img(src="../image/leftTopBig.svg", alt="") 
-                    img(src="../image/rightTopBig.svg", alt="")
+                    img(src="./image/leftTopBig.svg", alt="") 
+                    img(src="./image/rightTopBig.svg", alt="")
                     
                 .content=text
                 .two
-                    img(src="../image/leftBottomBig.svg", alt="")
-                    img(src="../image/rightBottomBig.svg", alt="")
-//- вид каталога больших    
+                    img(src="./image/leftBottomBig.svg", alt="")
+                    img(src="./image/rightBottomBig.svg", alt="")
+//- вид каталога больших   
 mixin inputsSet(text)
     input.public_input(type="text", placeholder=text)
 mixin areaText(text)
@@ -72,12 +72,12 @@ mixin areaText(text)
 mixin basketCard()
     .listShop__item 
         .listShop__img
-            img(src="../image/card.png", alt="")
+            img(src="./image/card.png", alt="")
         .listShop__content 
                 .listShop__header
                     .listShop__text №225 “Ромашки для Наташки”
                     .listShop__delete 
-                        img(src="../image/del.svg", alt="")
+                        img(src="./image/del.svg", alt="")
                 .listShop__footer 
                     .listShop__price
                         .card__price.listShop__price-card 
