@@ -1,0 +1,151 @@
+
+@media(max-width:1260px){
+    .collection{
+        &__container{
+            width: 97% !important; 
+         }
+    }
+}
+
+@media(max-width:1200px){
+    .container{
+        width: 100% !important;
+        height: 85% !important;
+    }
+    .catCard-width {
+        width: 560px;
+    }
+    .collection{
+    &__container{
+                justify-content: center;
+        }
+    &__right{
+                flex-direction: row !important ;
+                gap: 10px;
+        }
+}
+}
+
+@media(max-width:992px){
+  
+    .header{
+        &__logo{
+          h2 {
+            font-size: 32px !important;   
+            line-height: 50px !important;
+            text-align: center !important;
+            } 
+            span{
+                text-align: center;
+                display: block;
+                line-height: 21px !important;
+                font-size: 24px !important;
+            }
+            &::before{
+                content: '';
+                top:-7px !important;
+            }
+        }
+    } 
+    .headerH4{
+        font-size: 45px !important;
+    } 
+    .btnBig{
+        font-size: 18px !important;
+    }
+    .discont__slider {
+        .swiper-slide{
+            width: 300px !important;
+        }
+        .card{
+            width: auto;
+            height: auto;
+            margin: 0 10px;
+            &__footer{
+                flex-direction: column;
+            }
+            &__buy{
+                margin: 5px auto;
+            }
+            &__oldprice{
+                p{
+                    text-align: right;
+                }
+            }
+            &__currentprice{
+                
+                p{
+                    text-align: center;
+                }
+            }
+        }
+       
+        } 
+    .pagen{
+            bottom: -45px !important;
+        }
+    .public__h4{
+        font-size: 36px !important;
+        margin-left: 40px !important;
+    }
+    .AboutOutContent{
+        &__img{
+            width: 473px !important;
+        }
+        &__after-bigtext{
+            padding: 25px 50px;
+            
+            
+            width: 396px;
+        }
+    }
+    .forblock{
+        &__container{
+            justify-content: space-evenly !important;
+        }
+    }
+    .idea{
+        .public_input,.public_tetxArea{
+            width: auto !important;
+            margin-left: 30px !important;
+        }
+        
+    }
+    .view{
+        &__logo{
+            width: 232px !important;
+        }
+        &__container{
+            justify-content: space-around !important;
+        }
+    }
+   
+}
+@media(max-width:600px){
+    
+
+    .HeaderFlower{
+        .headerP{
+            font-size: 32px;
+        }
+        .btnBig {
+            font-size: 20px !important;
+        }
+    
+   
+}
+}
+@media(max-width:570px){
+    .collection{
+        &__left{
+            flex-direction: row !important;
+            gap: 10px;
+        }
+    }
+    .idea__container{
+        flex-direction: column !important;
+    }
+}
+@media(max-width: 440px) {
+   
+}

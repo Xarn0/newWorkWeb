@@ -1,0 +1,38 @@
+.listtocOne{
+    position: relative;
+    &::after{
+        content: url('../image/l1.svg');
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        z-index: 1;
+        top:20%;
+        left: -12vw;
+    }
+    &::before{
+        content: url('../image/l2.svg');
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        z-index: 1;
+        bottom: -90px;
+        right: 8vw;
+    }
+}
+.AboutOutContent__listoc{
+    &::before{
+        content: url(../image/l3.svg);
+        position: absolute;
+        left: -36%;
+        top: 50px;
+    }
+    &__listoc-right{
+        &::before{
+            content: url(../image/l4.svg);
+            position: absolute;
+            left: -36%;
+            top: 50px
+    }
+
+}
+}

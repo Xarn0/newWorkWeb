@@ -1,0 +1,62 @@
+include mix.pug
+block varib
+    - let HedaerBeuatufal=true
+doctype html 
+html(lang='ru')
+    head 
+        title
+        link(rel="stylesheet", href="../css/style.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css")
+       
+ 
+
+
+    body
+        header.header
+            .container
+                ul.header__nav
+                    li.header__item
+                        span.header__span  
+                        span.header__span  
+                        span.header__span  
+                    li.header__item
+                        .header__logo
+                            h2 FlORISTMAN 
+                            span Широкий выбор на любой вкус                              
+                                                 
+                    li.header__item
+                        ul.header__icons
+                            li.header__icon
+                                img(src="../image/icon/search.svg", alt="")
+                            li.header__icon
+                                img(src="../image/icon/basket.svg", alt="")
+                            li.header__icon
+                                img(src="../image/icon/user.svg", alt="")
+    
+
+                    
+
+                
+
+        block content
+
+footer.footer 
+      .footer__container 
+        h2 Контакты:
+        ul.footer__list 
+            li.footer__item.footer__item-phone +749500000000
+            li.footer__item.footer__item-email Электоронный_адрес@gmail.com
+            li.footer__item
+                ul.footer__icons 
+                    li.footer__icon 
+                        img(src="../image/vaiber.svg", alt="1")
+                    li.footer__icon 
+                        img(src="../image/fsb.svg", alt="1")
+                    li.footer__icon 
+                        img(src="../image/wat.svg", alt="1")
+                    li.footer__icon
+                        img(src="../image/instagram.svg", alt="1")
+            li.footer__item.footer__item-last  ©2021. Все права защищены      
+
+script(src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js")
+script(src='../js/javascript.js')

@@ -1,0 +1,108 @@
+mixin headerFont(text,bool)
+    if bool==true 
+         p.headerP Подарите ощущение праздника
+    h4.headerH4=text
+//- шапка 
+mixin BtnBig(text,id)
+    button.btnBig(id=id)=text
+//- большие копки 
+mixin card(text)
+    .card 
+        .card__header
+            img(src='../image/card.png')
+            span.hit хит продаж
+            span.new новинка
+            span.day букет дня
+            span.discote скидка 50%
+        .card__main
+            span №225 “Ромашки для Наташки” 
+            span №225 “Ромашки для Наташки” 
+        .card__footer
+            .card__price 
+                  .card__oldprice 
+                    p 5 400 грн
+                  .card__currentprice 
+                    p 3 700 грн
+            .card__buy  
+                button заказать
+//- карточки заказа
+mixin catalogItem(text,img)
+    .catCard
+        .catCard__img
+            img(src=img)
+        .catCard__footer
+            .one
+                img(src="../image/leftTop.svg", alt="")
+                img(src="../image/leftBottom.svg", alt="")
+            .content=text
+            .two
+               img(src="../image/rightTop.svg", alt="")
+               img(src="../image/rightBottom.svg", alt="")
+//- вид каталога    
+mixin catalogItemBig(text,img,align)
+    .catCard.catCard-width
+        .catCard__img
+            img(src=img)
+        if align=='left'
+            .catCard__footer-big.catCard__footer-big-left
+                .one
+                    img(src="../image/leftTopBig.svg", alt="") 
+                    img(src="../image/rightTopBig.svg", alt="")
+                    
+                .content=text
+                .two
+                    img(src="../image/leftBottomBig.svg", alt="")
+                    img(src="../image/rightBottomBig.svg", alt="")
+        else if align=='right'
+            .catCard__footer-big
+                .one
+                    img(src="../image/leftTopBig.svg", alt="") 
+                    img(src="../image/rightTopBig.svg", alt="")
+                    
+                .content=text
+                .two
+                    img(src="../image/leftBottomBig.svg", alt="")
+                    img(src="../image/rightBottomBig.svg", alt="")
+//- вид каталога больших    
+mixin inputsSet(text)
+    input.public_input(type="text", placeholder=text)
+mixin areaText(text)
+    textarea.public_tetxArea(placeholder=text,name="os", cols="30", rows="10" )
+
+mixin basketCard()
+    .listShop__item 
+        .listShop__img
+            img(src="../image/card.png", alt="")
+        .listShop__content 
+                .listShop__header
+                    .listShop__text №225 “Ромашки для Наташки”
+                    .listShop__delete 
+                        img(src="../image/del.svg", alt="")
+                .listShop__footer 
+                    .listShop__price
+                        .card__price.listShop__price-card 
+                            .card__oldprice 
+                                p 5 400 грн
+                            .card__currentprice 
+                                p 3 700 грн 
+                    .listShop__count
+                            .listShop__number 1 
+
+mixin radioInput(text,name,id)
+    label.labelRadio(for=id)
+        
+
+        input.inputRadio(type="radio",name=name,id=id)
+        .radioDiv 
+        .labelRadio__text=text  
+
+mixin filter(h5,count,name)
+    h5.filter__h5=h5
+    .filter__container 
+        - for (var i = 1; i < count; ++i) {
+            label.filter__label(for=h5 + i) 
+                input(type="radio",id=h5 + i,name=name).filter__item
+                .filter__text=h5+'(0)'
+                    
+        - }
+           

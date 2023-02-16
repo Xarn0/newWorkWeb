@@ -1,0 +1,44 @@
+extends ../layout/main 
+
+block varib
+    -let HedaerBeuatufal=true
+block content
+    if HedaerBeuatufal
+            section.flower
+                .container 
+                    .wrapper
+                        .HeaderFlower
+                            +headerFont('Каталог')
+    .fons--project                       
+        .catalog
+                .container 
+                    .catalog__container 
+                        .catalog__savbar
+                            +filter('Категории',6,'cat')
+                            +filter('Повод',6,'proba')
+                            +filter('Кому',6,'where')
+                            .filter__input 
+                                input(type="range",multiple="multiple",min="0",max='100',value="25,45"  )
+                        .catalog__content 
+                            +card()
+                            +card()
+                            +card()
+                            +card()
+                            +card()
+                            +card()
+    .view
+        .container 
+            .view__logo
+                .header__logo
+                            h2 FlORISTMAN 
+                            span Широкий выбор на любой вкус 
+            .view__container 
+                +catalogItem("Цветы",'../image/row.png')
+                +catalogItem("Воздушные шары",'../image/shart.png')
+                +catalogItem("Аксессуары",'../image/accessory.png')
+                +catalogItem("Фруктовые сладости",'../image/sweets.png')
+                +catalogItem("Сладости",'../image/5.png')
+                +catalogItem("Подаркиветы",'../image/6.png')
+                +catalogItem("Услуги",'../image/7.png')
+                +catalogItem("Комнатные растения",'../image/8.png')
+        

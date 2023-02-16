@@ -1,0 +1,46 @@
+extends ../layout/main 
+
+block varib
+    -let HedaerBeuatufal=true
+block content
+    if HedaerBeuatufal
+            section.flower
+                .container 
+                    .wrapper
+                        .HeaderFlower
+                            +headerFont('Букет №225 “Ромашки для Наташки”')
+    .fons--project
+        .product
+            .container.product__list
+                .product__container 
+                    .product__item
+                        .product__slider 
+                            .swiper.product__headerSlider 
+                                .swiper-wrapper 
+                                    .swiper-slide.product__headersSlide
+                                        img.product__imgheader(src="../image/card.png", alt="")
+                                    .swiper-slide.product__headersSlide
+                                        img.product__imgheader(src="../image/card.png", alt="")
+                                    .swiper-slide.product__headersSlide
+                                        img.product__imgheader(src="../image/card.png", alt="")
+                                    .swiper-slide.product__headersSlide
+                                        img.product__imgheader(src="../image/card.png", alt="")
+                                    .swiper-slide.product__headersSlide
+                                        img.product__imgheader(src="../image/card.png", alt="")
+                                        
+                               
+                            .swiper.product__footerSlider
+                                .swiper-wrapper 
+                                    .product__footersSlide.swiper-slide
+                                         img(src="../image/card.png", alt="")
+                                    .product__footersSlide.swiper-slide
+                                        img(src="../image/card.png", alt="")
+                                    .product__footersSlide.swiper-slide
+                                        img(src="../image/card.png", alt="")
+                                    .product__footersSlide.swiper-slide
+                                        img(src="../image/card.png", alt="")
+                                    .product__footersSlide.swiper-slide
+                                        img(src="../image/card.png", alt="")
+                                .swiper-button-next
+                                .swiper-button-prev       
+                    .product__item 

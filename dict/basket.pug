@@ -1,0 +1,75 @@
+extends ../layout/main 
+
+block varib
+    -let HedaerBeuatufal=true
+block content
+    if HedaerBeuatufal
+        section.flower
+            .container 
+                .wrapper
+                    .HeaderFlower
+                        +headerFont('Корзина')
+    .fons--project
+        .container 
+            .listShop 
+               .listShop__container 
+                     +basketCard()
+                     +basketCard()
+                     +basketCard()
+            .mathBasket 
+                .mathBasket__h4 Сумма заказов
+                .mathBasket__container 
+                    ul.mathBasket__list
+                        li.mathBasket__item
+                            .mathBasket__text Общая сумма заказов:
+                            .mathBasket__content 5 400 грн
+                        li.mathBasket__item
+                            .mathBasket__text Способ оплаты:
+                            .mathBasket__content 
+                                +radioInput('Оплата при доставке','radio','radio1')
+                                +radioInput('Оплата картой','radio','radio2')
+                                +radioInput('Оплата на карту ПриватБанк','radio','radio3')
+                        li.mathBasket__item
+                            .mathBasket__text Доставка
+                            .mathBasket__content 
+                                .mathBasket__row
+                                    p Самовызов
+                                    +radioInput('Бесплатно','deleveri','free')
+                                .mathBasket__row
+                                    p Курьером
+                                    +radioInput('100usd','deleveri','kur')
+                        li.mathBasket__item
+                            .mathBasket__text Скидка 
+                            .mathBasket__content -10%
+                        li.mathBasket__item
+                            .mathBasket__text Итого к оплате:
+                            .mathBasket__content.mathBasket__content-price 5 437 usd
+        .formalization
+            .formalization__container 
+                .mathBasket__h4 Оформление заказа
+                .formalization__header 
+                    .formalization__item.active Новый покупатель
+                    .formalization__item Постоянный покупатель 
+                .formalization__content    
+                    +inputsSet('Имя')
+                    +inputsSet('Телефон')
+                    +inputsSet('Адрес доставки')
+                .formalization__footer
+                    +BtnBig("Подтверждение заказа")
+    .view
+        .container 
+            .view__logo
+                .header__logo
+                            h2 FlORISTMAN 
+                            span Широкий выбор на любой вкус 
+            .view__container 
+                +catalogItem("Цветы",'../image/row.png')
+                +catalogItem("Воздушные шары",'../image/shart.png')
+                +catalogItem("Аксессуары",'../image/accessory.png')
+                +catalogItem("Фруктовые сладости",'../image/sweets.png')
+                +catalogItem("Сладости",'../image/5.png')
+                +catalogItem("Подаркиветы",'../image/6.png')
+                +catalogItem("Услуги",'../image/7.png')
+                +catalogItem("Комнатные растения",'../image/8.png')
+        
+            
