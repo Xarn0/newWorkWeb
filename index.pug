@@ -1,4 +1,4 @@
-extends ../layout/main 
+extends ./layout/main 
 
 block varib
     -let HedaerBeuatufal=true
@@ -41,33 +41,33 @@ block content
                         h4.public__h4 Почему именно мы?
                         .AboutOutContent__container.AboutOutContent__listoc-right     
                             .AboutOutContent__img.AboutOutContent__listoc 
-                                img(src="../image/args1.png", alt="")
+                                img(src="./image/args1.png", alt="")
                                 .AboutOutContent__after.AboutOutContent__after-bigtext.
                                         Вы можете выбрать любую цветочную композицию из нашего каталога или заказать свой вариант. Вы можете выбрать любую цветочную композицию
                                         из нашего каталога или заказать свой вариант                
                         .AboutOutContent__container     
                             .AboutOutContent__img 
-                                img(src="../image/args2.png", alt="")
+                                img(src="./image/args2.png", alt="")
                                 .AboutOutContent__after.AboutOutContent__after-smalltext.
                                         Вы можете выбрать любую цветочную композицию из нашего каталога или заказать свой вариант
                         .AboutOutContent__container.AboutOutContent__container-margin     
                             .AboutOutContent__img 
-                                img(src="../image/args3.png", alt="")
+                                img(src="./image/args3.png", alt="")
                                 .AboutOutContent__after.AboutOutContent__after-bigtext.
                                         Вы можете выбрать любую цветочную композицию из нашего каталога или заказать свой вариант
                 .collection
                     h4.public__h4 Каталог
                     .collection__container
                         .collection__left
-                            +catalogItem('Для вас', '../image/forYou.png')
-                            +catalogItem('Сладости','../image/sweet.png')
+                            +catalogItem('Для вас', './image/forYou.png')
+                            +catalogItem('Сладости','./image/sweet.png')
                         .collection__center
-                            +catalogItemBig('Подарки','../image/sot.png','right')
-                            +catalogItemBig('Букеты','../image/bug.png','left')
-                            +catalogItemBig('Розы','../image/rw.png','right')
+                            +catalogItemBig('Подарки','./image/sot.png','right')
+                            +catalogItemBig('Букеты','./image/bug.png','left')
+                            +catalogItemBig('Розы','./image/rw.png','right')
                         .collection__right
-                            +catalogItem('Праздничная коллекция', '../image/tl.png')
-                            +catalogItem('Комнатные растения','../image/fl.png')
+                            +catalogItem('Праздничная коллекция', './image/tl.png')
+                            +catalogItem('Комнатные растения','./image/fl.png')
                 .forblock  
                     h4.public__h4.forafter Для кого
                     .forblock__container 
@@ -97,7 +97,7 @@ block content
                             +inputsSet('Телефон')
                             +areaText("Ваша идея")
                         .idea__img 
-                            img(src="../image/ideaImg.png", alt="")
+                            img(src="./image/ideaImg.png", alt="")
                     .idea__footer
                         +BtnBig('Отправить')
         .view
@@ -107,14 +107,14 @@ block content
                                 h2 FlORISTMAN 
                                 span Широкий выбор на любой вкус 
                 .view__container 
-                    +catalogItem("Цветы",'../image/row.png')
-                    +catalogItem("Воздушные шары",'../image/shart.png')
-                    +catalogItem("Аксессуары",'../image/accessory.png')
-                    +catalogItem("Фруктовые сладости",'../image/sweets.png')
-                    +catalogItem("Сладости",'../image/5.png')
-                    +catalogItem("Подаркиветы",'../image/6.png')
-                    +catalogItem("Услуги",'../image/7.png')
-                    +catalogItem("Комнатные растения",'../image/8.png')
+                    +catalogItem("Цветы",'./image/row.png')
+                    +catalogItem("Воздушные шары",'./image/shart.png')
+                    +catalogItem("Аксессуары",'./image/accessory.png')
+                    +catalogItem("Фруктовые сладости",'./image/sweets.png')
+                    +catalogItem("Сладости",'./image/5.png')
+                    +catalogItem("Подаркиветы",'./image/6.png')
+                    +catalogItem("Услуги",'./image/7.png')
+                    +catalogItem("Комнатные растения",'./image/8.png')
                 
              
 
